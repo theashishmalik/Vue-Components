@@ -2,12 +2,24 @@
   <div class="component">
         <h3>You may edit the User here</h3>
         <p>Edit me!</p>
+        <p>{{userage}}</p>
+        <button @click="changeAge">change Age</button>
     </div>
 </template>
 
 <script>
 import {eventBus} from '../main.js'
 export default {
+    props:{
+        userage:Number
+    },
+    methods:{
+        changeAge(){
+            this.userage+=10;
+            eventBus.$emit('ageChanged',this.userage)
+        }
+
+    }
 
 
 }
