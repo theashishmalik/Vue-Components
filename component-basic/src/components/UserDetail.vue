@@ -7,7 +7,6 @@
     <button @click="changeUser">Change Username</button>
   </div>
 </template>
-
 <script>
 import { eventBus } from "../main.js";
 export default {
@@ -25,7 +24,6 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 div {
   background-color: chocolate;
