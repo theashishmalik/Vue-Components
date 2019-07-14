@@ -7,11 +7,9 @@
       <hr />
       <p>{{selected}}</p>
       <hr />
-      <div>
-        <component :is="selected">
-          <p>Here it is</p>
-        </component>
-      </div>
+        <component :is='selected'>
+          <p>Dynamic Component</p>
+        </component >
     </div>
     <hr />
     <hr />

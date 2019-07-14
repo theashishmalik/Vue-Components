@@ -1,5 +1,7 @@
 <template>
     <div>
+         <p>Green</p>
+         <slot></slot>
     </div>
 </template>
 
