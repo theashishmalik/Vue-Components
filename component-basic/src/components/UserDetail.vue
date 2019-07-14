@@ -19,7 +19,7 @@ export default {
     }
   },
   created() {
-    eventBus.$on("ageChanged", d => {
+    eventBus.$on("ageChanged", (d) => {
       this.userage = d;
     });
   }
